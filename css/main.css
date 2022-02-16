@@ -6,11 +6,9 @@
   width: 375px;
   height: 700px;
   background-image: url("../images/bg-pattern.svg");
-  background-repeat: no-repeat;
-  border: 5px solid green; }
+  background-repeat: no-repeat; }
   .container .titleDiv {
     height: 220px;
-    border: 3px solid black;
     background-image: url("../images/pattern-circles.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -26,11 +24,10 @@
   .container .appDiv {
     width: 330px;
     margin: auto;
-    border: 3px solid red; }
+    background-color: #fafbff; }
     .container .appDiv .rangeSlider {
       height: 160px;
       background-color: #fafbff;
-      border: 2px solid orange;
       text-align: center; }
       .container .appDiv .rangeSlider h2 {
         text-transform: uppercase;
@@ -86,8 +83,7 @@
       .container .appDiv .rangeSlider .pricingDiv {
         display: flex;
         justify-content: center;
-        margin-top: 25px;
-        border: 3px solid red; }
+        margin-top: 25px; }
         .container .appDiv .rangeSlider .pricingDiv h3 {
           font-size: 28px;
           font-weight: bold; }
@@ -97,16 +93,50 @@
           padding: 6px 0 0 7px; }
     .container .appDiv .billingDiv {
       height: 100px;
-      border: 5px solid green; }
+      display: flex;
+      justify-content: center;
+      padding-top: 30px; }
+      .container .appDiv .billingDiv .monthlyBilling, .container .appDiv .billingDiv .yearlyBilling {
+        height: 25px;
+        font-size: 13px;
+        color: #858fad;
+        padding-top: 3px; }
+      .container .appDiv .billingDiv .yearlyBilling {
+        margin-right: 5px; }
+      .container .appDiv .billingDiv .checkboxDiv {
+        height: 25px;
+        margin: 0 12px; }
+        .container .appDiv .billingDiv .checkboxDiv .form-check-input {
+          width: 40px;
+          height: 20px;
+          background-color: #cdd7ee;
+          border: none; }
+          .container .appDiv .billingDiv .checkboxDiv .form-check-input:focus {
+            box-shadow: none; }
+          .container .appDiv .billingDiv .checkboxDiv .form-check-input:checked {
+            background-color: #10d5c2; }
+      .container .appDiv .billingDiv .discount {
+        width: 42px;
+        height: 25px;
+        font-size: 12px;
+        border-radius: 10px;
+        background-color: #feece7;
+        color: #ff8c66;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3px; }
+        .container .appDiv .billingDiv .discount p {
+          margin: 0;
+          padding: 0; }
     .container .appDiv .trialDiv {
       height: 180px;
-      border: 2px solid blue;
       text-align: center;
       padding-top: 20px; }
       .container .appDiv .trialDiv p {
         font-size: 13px;
         margin: 0;
-        line-height: 1.9;
+        line-height: 2;
         color: #858fad; }
         .container .appDiv .trialDiv p img {
           padding-right: 10px; }
@@ -119,5 +149,7 @@
         font-size: 13px;
         padding: 8px 0;
         margin-top: 25px; }
+        .container .appDiv .trialDiv button:hover {
+          color: white; }
 
 /*# sourceMappingURL=main.css.map */

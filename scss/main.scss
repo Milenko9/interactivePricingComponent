@@ -10,10 +10,8 @@
   height: 700px;
   background-image: url("../images/bg-pattern.svg");
   background-repeat: no-repeat;
-  border: 5px solid green;
   .titleDiv {
     height: 220px;
-    border: 3px solid black;
     background-image: url("../images/pattern-circles.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -32,11 +30,10 @@
   .appDiv {
     width: 330px;
     margin: auto;
-    border: 3px solid red;
+    background-color: $veryPaleBlue;
     .rangeSlider {
       height: 160px;
       background-color: $veryPaleBlue;
-      border: 2px solid orange;
       text-align: center;
       h2 {
         text-transform: uppercase;
@@ -101,7 +98,6 @@
         display: flex;
         justify-content: center;
         margin-top: 25px;
-        border: 3px solid red;
         h3 {
           font-size: 28px;
           font-weight: bold;
@@ -115,17 +111,59 @@
     }
     .billingDiv {
       height: 100px;
-      border: 5px solid green;
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+      .monthlyBilling, .yearlyBilling {
+        height: 25px;
+        font-size: 13px;
+        color: $grayishBlue;
+        padding-top: 3px;
+      }
+      .yearlyBilling {
+        margin-right: 5px;
+      }
+      .checkboxDiv {
+        height: 25px;
+        margin: 0 12px;
+        .form-check-input {
+          width: 40px;
+          height: 20px;
+          background-color: $lightGrayishBlue2;
+          border: none;
+          &:focus {
+            box-shadow: none;
+          }
+          &:checked {
+            background-color: $strongCyan;
+          }
+        }
+      }
+      .discount {
+        width: 42px;
+        height: 25px;
+        font-size: 12px;
+        border-radius: 10px;
+        background-color: $lightGrayishRed;
+        color: $lightRed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3px;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+      }
     }
     .trialDiv {
       height: 180px;
-      border: 2px solid blue;
       text-align: center;
       padding-top: 20px;
       p {
         font-size: 13px;
         margin: 0;
-        line-height: 1.9;
+        line-height: 2;
         color: $grayishBlue;
         img {
           padding-right: 10px;
@@ -140,6 +178,9 @@
         font-size: 13px;
         padding: 8px 0;
         margin-top: 25px;
+        &:hover {
+          color: $white;
+        }
       }
     }
   }

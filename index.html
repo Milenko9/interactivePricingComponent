@@ -37,11 +37,11 @@
                 <h2>100k pageviews</h2>
                 <div class="slider-container">
               		<span class="bar"><span class="fill"></span></span>
-              		<input id="slider" class="slider" type="range" min="0" max="32" value="16" onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+              		<input id="slider" class="slider" type="range" min="0" max="32" value="16" step="0.1" onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
               	</div>
 
                 <div class="pricingDiv">
-                  <h3>$16.00</h3>
+                  <h3 id="rangeValue">$16.00</h3>
                   <p>/ month</p>
                 </div>
               </div>
@@ -50,10 +50,23 @@
 
             <!-- Checkbox Billing Div -->
             <div class="billingDiv">
-              <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-              </div>
+
+                <div class="monthlyBilling">
+                  <p>Monthly Billing</p>
+                </div>
+
+                <div class="checkboxDiv form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="checkbox">
+                </div>
+
+                <div class="yearlyBilling">
+                  <p>Yearly Billing</p>
+                </div>
+
+                <div class="discount">
+                  <p>-25%</p>
+                </div>
+
             </div>
             <!-- Checkbox Billing Div END -->
 
