@@ -2,44 +2,43 @@
 * {
   font-family: 'Manrope', sans-serif; }
 
-.container {
+.container-fluid {
   width: 375px;
-  height: 700px;
   background-image: url("../images/bg-pattern.svg");
   background-repeat: no-repeat; }
-  .container .titleDiv {
+  .container-fluid .titleDiv {
     height: 220px;
     background-image: url("../images/pattern-circles.svg");
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     padding-top: 70px; }
-    .container .titleDiv h1 {
+    .container-fluid .titleDiv h1 {
       font-size: 22px;
       font-weight: bold;
       color: #293356; }
-    .container .titleDiv p {
+    .container-fluid .titleDiv p {
       font-size: 15px;
       color: #858fad; }
-  .container .appDiv {
+  .container-fluid .appDiv {
     width: 330px;
     margin: auto;
     background-color: #fafbff; }
-    .container .appDiv .rangeSlider {
+    .container-fluid .appDiv .rangeSlider {
       height: 160px;
       background-color: #fafbff;
       text-align: center; }
-      .container .appDiv .rangeSlider h2 {
+      .container-fluid .appDiv .rangeSlider h2 {
         text-transform: uppercase;
         font-size: 13px;
         color: #858fad;
         letter-spacing: 1.3px;
         margin: 20px 0; }
-      .container .appDiv .rangeSlider .slider-container {
+      .container-fluid .appDiv .rangeSlider .slider-container {
         width: 90%;
         margin: auto;
         position: relative; }
-        .container .appDiv .rangeSlider .slider-container .bar {
+        .container-fluid .appDiv .rangeSlider .slider-container .bar {
           position: absolute;
           z-index: 1;
           left: 2px;
@@ -49,12 +48,12 @@
           border-radius: 5px;
           background-color: #eaeefb;
           overflow: hidden; }
-          .container .appDiv .rangeSlider .slider-container .bar .fill {
+          .container-fluid .appDiv .rangeSlider .slider-container .bar .fill {
             display: block;
             width: 0;
             height: 100%;
             background-color: #a5f3eb; }
-        .container .appDiv .rangeSlider .slider-container .slider {
+        .container-fluid .appDiv .rangeSlider .slider-container .slider {
           position: relative;
           z-index: 2;
           -webkit-appearance: none;
@@ -63,7 +62,7 @@
           border-radius: 5px;
           outline: none;
           background-color: transparent; }
-          .container .appDiv .rangeSlider .slider-container .slider::-webkit-slider-thumb {
+          .container-fluid .appDiv .rangeSlider .slider-container .slider::-webkit-slider-thumb {
             -webkit-appearance: none;
             width: 35px;
             height: 35px;
@@ -76,46 +75,46 @@
             background-image: url("../images/icon-slider.svg");
             background-repeat: no-repeat;
             background-position: center; }
-            .container .appDiv .rangeSlider .slider-container .slider::-webkit-slider-thumb:hover {
+            .container-fluid .appDiv .rangeSlider .slider-container .slider::-webkit-slider-thumb:hover {
               box-shadow: 0 0 0 10px rgba(29, 220, 200, 0.1); }
-            .container .appDiv .rangeSlider .slider-container .slider::-webkit-slider-thumb:active {
+            .container-fluid .appDiv .rangeSlider .slider-container .slider::-webkit-slider-thumb:active {
               box-shadow: 0 0 0 20px rgba(12, 192, 173, 0.2); }
-      .container .appDiv .rangeSlider .pricingDiv {
+      .container-fluid .appDiv .rangeSlider .pricingDiv {
         display: flex;
         justify-content: center;
         margin-top: 25px; }
-        .container .appDiv .rangeSlider .pricingDiv h3 {
+        .container-fluid .appDiv .rangeSlider .pricingDiv h3 {
           font-size: 28px;
           font-weight: bold; }
-        .container .appDiv .rangeSlider .pricingDiv p {
+        .container-fluid .appDiv .rangeSlider .pricingDiv p {
           font-size: 14px;
           color: #858fad;
           padding: 6px 0 0 7px; }
-    .container .appDiv .billingDiv {
+    .container-fluid .appDiv .billingDiv {
       height: 100px;
       display: flex;
       justify-content: center;
       padding-top: 30px; }
-      .container .appDiv .billingDiv .monthlyBilling, .container .appDiv .billingDiv .yearlyBilling {
+      .container-fluid .appDiv .billingDiv .monthlyBilling, .container-fluid .appDiv .billingDiv .yearlyBilling {
         height: 25px;
         font-size: 13px;
         color: #858fad;
         padding-top: 3px; }
-      .container .appDiv .billingDiv .yearlyBilling {
+      .container-fluid .appDiv .billingDiv .yearlyBilling {
         margin-right: 5px; }
-      .container .appDiv .billingDiv .checkboxDiv {
+      .container-fluid .appDiv .billingDiv .checkboxDiv {
         height: 25px;
         margin: 0 12px; }
-        .container .appDiv .billingDiv .checkboxDiv .form-check-input {
+        .container-fluid .appDiv .billingDiv .checkboxDiv .form-check-input {
           width: 40px;
           height: 20px;
           background-color: #cdd7ee;
           border: none; }
-          .container .appDiv .billingDiv .checkboxDiv .form-check-input:focus {
+          .container-fluid .appDiv .billingDiv .checkboxDiv .form-check-input:focus {
             box-shadow: none; }
-          .container .appDiv .billingDiv .checkboxDiv .form-check-input:checked {
+          .container-fluid .appDiv .billingDiv .checkboxDiv .form-check-input:checked {
             background-color: #10d5c2; }
-      .container .appDiv .billingDiv .discount {
+      .container-fluid .appDiv .billingDiv .discount {
         width: 42px;
         height: 25px;
         font-size: 12px;
@@ -126,21 +125,25 @@
         justify-content: center;
         align-items: center;
         padding-top: 3px; }
-        .container .appDiv .billingDiv .discount p {
+        .container-fluid .appDiv .billingDiv .discount p {
           margin: 0;
           padding: 0; }
-    .container .appDiv .trialDiv {
+          .container-fluid .appDiv .billingDiv .discount p span {
+            display: none; }
+    .container-fluid .appDiv .trialDiv {
       height: 180px;
       text-align: center;
       padding-top: 20px; }
-      .container .appDiv .trialDiv p {
+      .container-fluid .appDiv .trialDiv p {
         font-size: 13px;
         margin: 0;
         line-height: 2;
         color: #858fad; }
-        .container .appDiv .trialDiv p img {
+        .container-fluid .appDiv .trialDiv p img {
           padding-right: 10px; }
-      .container .appDiv .trialDiv button {
+      .container-fluid .appDiv .trialDiv br {
+        display: none; }
+      .container-fluid .appDiv .trialDiv button {
         width: 200px;
         border: 0;
         border-radius: 20px;
@@ -148,8 +151,78 @@
         color: #bdccff;
         font-size: 13px;
         padding: 8px 0;
-        margin-top: 25px; }
-        .container .appDiv .trialDiv button:hover {
+        margin-top: 25px;
+        transition: .3s; }
+        .container-fluid .appDiv .trialDiv button:hover {
           color: white; }
+  .container-fluid .codedBy {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 40px; }
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 100%;
+    background-size: contain; }
+    .container-fluid .titleDiv {
+      height: 270px;
+      padding-top: 100px; }
+      .container-fluid .titleDiv h1 {
+        font-size: 28px; }
+      .container-fluid .titleDiv p {
+        padding-top: 4px; }
+        .container-fluid .titleDiv p br {
+          display: none; }
+    .container-fluid .appDiv {
+      width: 530px; }
+      .container-fluid .appDiv .rangeSlider {
+        height: 160px;
+        text-align: left;
+        position: relative; }
+        .container-fluid .appDiv .rangeSlider h2 {
+          font-size: 14px;
+          padding: 20px 0 0 36px; }
+        .container-fluid .appDiv .rangeSlider .slider-container {
+          padding-top: 20px; }
+          .container-fluid .appDiv .rangeSlider .slider-container .bar {
+            top: 27px;
+            height: 8px; }
+        .container-fluid .appDiv .rangeSlider .pricingDiv {
+          margin-top: 0;
+          justify-content: flex-end;
+          position: absolute;
+          top: 20px;
+          right: 20px; }
+          .container-fluid .appDiv .rangeSlider .pricingDiv h3 {
+            font-size: 40px; }
+          .container-fluid .appDiv .rangeSlider .pricingDiv p {
+            font-size: 15px;
+            padding: 14px 0 0 7px; }
+      .container-fluid .appDiv .billingDiv {
+        height: 60px;
+        padding-top: 0px; }
+        .container-fluid .appDiv .billingDiv .discount {
+          width: 100px; }
+          .container-fluid .appDiv .billingDiv .discount p {
+            margin: 0;
+            padding: 0; }
+            .container-fluid .appDiv .billingDiv .discount p span {
+              display: block;
+              float: right;
+              padding-left: 3px; }
+      .container-fluid .appDiv .trialDiv {
+        height: 141px;
+        text-align: left;
+        padding-top: 30px;
+        position: relative; }
+        .container-fluid .appDiv .trialDiv p {
+          line-height: 0; }
+        .container-fluid .appDiv .trialDiv br {
+          display: block; }
+        .container-fluid .appDiv .trialDiv button {
+          width: 180px;
+          position: absolute;
+          top: 24px;
+          right: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

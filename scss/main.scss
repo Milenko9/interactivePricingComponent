@@ -5,9 +5,8 @@
   font-family: 'Manrope', sans-serif;
 }
 
-.container {
+.container-fluid {
   width: 375px;
-  height: 700px;
   background-image: url("../images/bg-pattern.svg");
   background-repeat: no-repeat;
   .titleDiv {
@@ -153,6 +152,9 @@
         p {
           margin: 0;
           padding: 0;
+          span {
+            display: none;
+          }
         }
       }
     }
@@ -169,6 +171,9 @@
           padding-right: 10px;
         }
       }
+      br {
+        display: none;
+      }
       button {
         width: 200px;
         border: 0;
@@ -178,8 +183,103 @@
         font-size: 13px;
         padding: 8px 0;
         margin-top: 25px;
+        transition: .3s;
         &:hover {
           color: $white;
+        }
+      }
+    }
+  }
+  .codedBy {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+}
+
+// MEDIA QUERY
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 100%;
+    background-size: contain;
+    .titleDiv {
+      height: 270px;
+      padding-top: 100px;
+      h1 {
+        font-size: 28px;
+      }
+      p {
+        padding-top: 4px;
+        br {
+          display: none;
+        }
+      }
+    }
+    .appDiv {
+      width: 530px;
+      .rangeSlider {
+        height: 160px;
+        text-align: left;
+        position: relative;
+        h2 {
+          font-size: 14px;
+          padding: 20px 0 0 36px;
+        }
+        .slider-container {
+          padding-top: 20px;
+          .bar {
+          	top: 27px;
+          	height: 8px;
+          }
+        }
+        .pricingDiv {
+          margin-top: 0;
+          justify-content: flex-end;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          h3 {
+            font-size: 40px;
+          }
+          p {
+            font-size: 15px;
+            padding: 14px 0 0 7px;
+          }
+        }
+      }
+      .billingDiv {
+        height: 60px;
+        padding-top: 0px;
+        .discount {
+          width: 100px;
+          p {
+            margin: 0;
+            padding: 0;
+            span {
+              display: block;
+              float: right;
+              padding-left: 3px;
+            }
+          }
+        }
+      }
+      .trialDiv {
+        height: 141px;
+        text-align: left;
+        padding-top: 30px;
+        position: relative;
+        p {
+          line-height: 0;
+        }
+        br {
+          display: block;
+        }
+        button {
+          width: 180px;
+          position: absolute;
+          top: 24px;
+          right: 20px;
         }
       }
     }
